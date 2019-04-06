@@ -21,7 +21,7 @@ const index =function(request,response){
 
 const lista= function(request,response){
 
-    response.render("lista", {lista : listaUF })
+    response.render("uf/lista", {lista : listaUF })
 }
 
 
