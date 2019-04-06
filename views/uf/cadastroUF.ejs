@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cadastro UF</title>
+</head>
+<body>
+    <fieldset>
+        <legend><h2>Cadastro Unidade Federativa</h2></legend>
+            <table>
+            <thead>
+                <tr>
+                    <th>Número da Unidade Federativa</th>
+                    <th>Nome Da Unidade Federativa</th>
+                    <th>Sigla da Uniddade Federativa</th>
+                </tr>
+            </thead>
+            <tbody>
+                <% lista.forEach(function(UF){ %> 
+                    <tr>
+                        <td><%= UF.nomeUF %></td>
+                        <td><%= UF.numeroUF %></td>
+                        <td><%= UF.siglaUF %></td>
+                    </tr>
+                <% }) %>
+            </tbody>
+        </table>
+        <a href="/"> Novo Cadastro</a>
+    </fieldset>
+</body>
+</html>
